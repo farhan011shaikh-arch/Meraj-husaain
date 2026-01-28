@@ -1,10 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessory Hub - Watches, Belts, Eyewear & More</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .hero { background: linear-gradient(to right, #ff7e5f, #feb47b); color: white; padding: 50px 0; }
+        .product-card { margin-bottom: 20px; }
+        footer { background: #343a40; color: white; padding: 20px 0; }
+    </style>
 </head>
 <body>
-  <h1>Hello 👋</h1>
-  <p>My website is live!</p>
+    <!-- Header/Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-shopping-bag"></i> Accessory Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#watches">Watches</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#belts">Belts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#eyewear">Eyewear</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#goggles">Goggles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#parts">Parts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lights">Lamps/Lights/Torches</a></li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search accessories..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container">
+            <h1>Welcome to Accessory Hub</h1>
+            <p>Discover premium watches, belts, eyewear, goggles, parts, and lighting accessories for every style.</p>
+            <a href="#watches" class="btn btn-light btn-lg">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <div class="container my-5">
+        <!-- Watches -->
+        <h2 id="watches" class="text-center mb-4"><i class="fas fa-clock"></i> Watches</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Analog+Watch" class="card-img-top" alt="Analog Watch">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Analog Watch</h5>
+                        <p class="card-text">Timeless design with leather strap. $99.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Digital+Watch" class="card-img-top" alt="Digital Watch">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Digital Watch</h5>
+                        <p class="card-text">Fitness tracking and notifications. $149.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more watch products here -->
+        </div>
+
+        <!-- Belts -->
+        <h2 id="belts" class="text-center mb-4 mt-5"><i class="fas fa-stream"></i> Belts</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Leather+Belt" class="card-img-top" alt="Leather Belt">
+                    <div class="card-body">
+                        <h5 class="card-title">Genuine Leather Belt</h5>
+                        <p class="card-text">Durable and stylish for everyday wear. $39.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more belt products here -->
+        </div>
+
+        <!-- Eyewear -->
+        <h2 id="eyewear" class="text-center mb-4 mt-5"><i class="fas fa-glasses"></i> Eyewear</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Sunglasses" class="card-img-top" alt="Sunglasses">
+                    <div class="card-body">
+                        <h5 class="card-title">Polarized Sunglasses</h5>
+                        <p class="card-text">UV protection for outdoor adventures. $59.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more eyewear products here -->
+        </div>
+
+        <!-- Goggles -->
+        <h2 id="goggles" class="text-center mb-4 mt-5"><i class="fas fa-eye"></i> Goggles</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Ski+Goggles" class="card-img-top" alt="Ski Goggles">
+                    <div class="card-body">
+                        <h5 class="card-title">Anti-Fog Ski Goggles</h5>
+                        <p class="card-text">Crystal-clear vision in snowy conditions. $79.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more goggles products here -->
+        </div>
+
+        <!-- Parts -->
+        <h2 id="parts" class="text-center mb-4 mt-5"><i class="fas fa-cogs"></i> Parts</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Watch+Strap" class="card-img-top" alt="Watch Strap">
+                    <div class="card-body">
+                        <h5 class="card-title">Replacement Watch Strap</h5>
+                        <p class="card-text">Compatible with most analog watches. $19.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more parts (e.g., belt buckles) here -->
+        </div>
+
+        <!-- Lamps/Lights/Torches -->
+        <h2 id="lights" class="text-center mb-4 mt-5"><i class="fas fa-lightbulb"></i> Lamps/Lights/Torches</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x200?text=LED+Torch" class="card-img-top" alt="LED Torch">
+                    <div class="card-body">
+                        <h5 class="card-title">Rechargeable LED Torch</h5>
+                        <p class="card-text">Bright, waterproof for camping or emergencies. $29.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://via.placeholder.com/300x200?text=Desk+Lamp" class="card-img-top" alt="Desk Lamp">
+                    <div class="card-body">
+                        <h5 class="card-title">Adjustable Desk Lamp</h5>
+                        <p class="card-text">Energy-efficient LED for home/office. $49.99</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more lighting products here -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2023 Accessory Hub. All rights reserved. | <a href="#" class="text-light">Contact Us</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
