@@ -171,8 +171,38 @@
         <div class="container">
             <p>&copy; 2023 Accessory Hub. All rights reserved. | <a href="#" class="text-light">Contact Us</a></p>
         </div>
-    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><!-- GRAPH SECTION -->
+<div class="container my-5">
+  <h2 class="text-center">Sales Overview</h2>
+  <canvas id="salesChart"></canvas>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('salesChart').getContext('2d');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Watches', 'Belts', 'Eyewear', 'Goggles', 'Lights'],
+      datasets: [{
+        label: 'Sales',
+        data: [120, 90, 70, 60, 100],
+        backgroundColor: [
+          '#0d6efd',
+          '#198754',
+          '#ffc107',
+          '#dc3545',
+          '#6f42c1'
+        ]
+      }]
+    },
+    options: {
+      responsive: true
+    }
+  });
+</script>
 </body>
 </html>
